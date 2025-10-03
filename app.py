@@ -1,13 +1,13 @@
 import datetime
 
 mood = input("How do you feel today? ")
-now = datetime.datetime.now()
+today = datetime.date.today()
 
 moodDB = []
 
 moodDB.append({
     "mood": mood,
-    "time": datetime.datetime.now()
+    "time": today
 })
 
 print(moodDB)
